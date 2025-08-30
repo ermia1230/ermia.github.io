@@ -1,0 +1,21 @@
+/* CSS Reset for the Error Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add text in the background */
+body::before {
+  content: "Go get a life";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 100px;
+  opacity: 0.05;
+  color: #000;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: -1;
+}
